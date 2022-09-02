@@ -1,0 +1,187 @@
+.Card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1%;
+    border: 1px solid rgb(214, 214, 214);
+    min-height: 45vw;
+    width: 33.33%;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+.Card > h3{
+    color: #63aa05;
+    font-size: 1.8vw;
+    font-weight: 500;
+    z-index: 1;
+}
+.Card > img{
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+.Card>img:hover{
+    transform: scale(1.125);
+    transition: all 0.5s ease-in-out;
+}
+.Card > h2{
+    font-size: 1.8vw;
+    font-family: 'Satisfy', cursive;
+    font-weight: 500;
+    z-index: 1;
+}
+.detailsRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    height: 5vh;
+}
+
+.detailsRow > h3{
+    font-weight: 400;
+    font-size: 1.5vw;
+    border: 1px solid rgb(216, 148, 0);
+    color: rgb(216, 148, 0);
+    padding: 0.5vw;
+    cursor: default;
+    transition: all 0.3s ease-in-out;
+}
+
+.detailsRow > p{
+    color: red;
+    font-size: 1.5vw;
+    text-decoration: line-through;
+}
+.detailsRow > h5{
+    color: #63aa05;
+    font-size: 1.8vw;
+}
+
+.mainRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 6vh;
+
+}
+.mainRow > button:first-child{
+    height: 2.5vw;
+    width: 2.5vw;
+    border: 1px solid crimson;
+    background-color: crimson;
+    color: white;
+    font-weight: 700;
+    font-size: 2vw;
+    margin-right: 2vw;
+    border-radius: 10%;
+    transition: all 0.3s ease-in-out;
+}
+.mainRow > button:first-child:hover{
+    background-color: rgb(196, 2, 41);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.mainRow > button:last-child{
+    height: 2.5vw;
+    width: 2.5vw;
+    border: 1px solid #63aa05;
+    background-color: #63aa05;
+    font-size: 2vw;
+    font-weight: 700;
+    margin-left: 2vw;
+    color: white;
+    border-radius: 10%;
+    transition: all 0.3s ease-in-out;
+}
+.mainRow > button:last-child:hover{
+    background-color: #569603;
+    cursor: pointer;    
+    transition: all 0.3s ease-in-out;
+}
+.mainRow > span{
+    font-size: 1.8vw;
+}
+.bottomRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 5vh;
+}
+
+.addToCart{
+    width: 90%;
+    height: 5vh;
+    border: none;
+    font-size: 1.5vw;
+    background-color: orangered;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.remove{
+    width: 90%;
+    height: 5vh;
+    border: none;
+    font-size: 1.5vw;
+    background-color: transparent;
+    color: dodgerblue;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+@media screen and (max-width: 768px){
+    .Card{
+        width: 60%;
+        min-height: 45vh;
+        margin: 2%;
+        padding: 2%;
+        box-shadow: 0 0 5px rgb(211, 211, 211);
+    } 
+    .Card > h3{
+        font-size: 2.5vh;
+    }
+    .Card > h2{
+        font-size: 3vh;
+    }
+    .detailsRow{
+        width: 100%;
+    }
+    .detailsRow > h3{
+        padding: 0.5vh;
+        font-size: 2vh;
+    }
+    .detailsRow > p{
+        font-size: 2vh;
+    }
+    .detailsRow > h5{
+        font-size: 2vh;
+    }
+    .mainRow > button:first-child{
+        height: 4vh;
+        width: 4vh;
+        font-size: 2.5vh;
+        margin-right: 2.5vh;
+    }
+    .mainRow > button:first-child:hover{
+        font-size: 2.5vh;
+    }
+    .mainRow > button:last-child{
+        height: 3.5vh;
+        width: 3.5vh;
+        font-size: 2.5vh;
+        margin-left: 2.5vh;
+    }
+    .mainRow > span{
+        font-size: 2.5vh;
+    }
+    .bottomRow > button{
+        font-size: 2.5vh;
+    }
+}

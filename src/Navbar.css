@@ -1,0 +1,320 @@
+.backToTop{
+    position: fixed;
+    top: 80%;
+    right: 1%;
+    border-radius: 50%;
+    height: 5vw;
+    width: 5vw;
+    color: rgb(233, 81, 10);
+    background-color: #ffd0a9;
+    box-shadow: 0 0 5px rgb(255, 155, 118);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: none;
+    z-index: 3;
+    transition: all 0.5s ease-in-out;
+}
+.cartArea{
+    height: 7vh;
+    width: 7vh;
+    border-radius: 50%;
+    background-color: rgb(221, 255, 224);
+    position: fixed;
+    top: 50%;
+    right: 1%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 5px rgb(183, 255, 189);
+    z-index: 3;
+}
+.cartCounter2{
+    height: 2.5vh;
+    width: 2.5vh;
+    background-color: crimson;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8vh;
+    color: white;
+    position: absolute;
+    top: 0;
+}
+
+.Navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 3% 1% 3%;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 12vw;
+    border-bottom: 1px solid rgb(209, 209, 209);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.Navbar > img{
+    width: 18%;
+    height: 10vw;
+    transition: all 0.5s ease-in-out;
+}
+.Navbar > h2{
+    font-size: 1.8vw;
+    font-weight: 500;
+    color: #B12DB0;
+} 
+.fa-opencart{
+    color: #556D0B;
+    font-size: 3vw;
+    cursor: pointer;
+}
+.cartCounter{
+    height: 2.5vw;
+    width: 2.5vw;
+    background-color: #DB6165;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: 700;
+    position: absolute;
+    top: 15%;
+    right: 3%;
+}
+
+.lowerNavbar{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    height: 4vw;
+    background-color: white;
+    padding: 0% 3% 0% 3%;
+    box-shadow: 0px 1px 3px grey;
+    position: sticky;
+    top: 12%;
+    z-index: 2;
+}
+.lowerNavbar button{
+    width: 20vw;
+    height: 4vw;
+    padding: 1%;
+    color: grey;
+    font-size: 1.35vw;
+    border: none;
+    background-color: transparent;
+}
+.lowerNavbar button:hover{
+    cursor: pointer;
+    background-color: rgba(240, 240, 240, 0.65);
+}
+
+.fakeNavbar{
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 7vh;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    transition: all 0.5s ease-in-out;
+}
+.fakeNavbar > img{
+    width: 18%;
+    height: 5vh;
+    transition: all 0.5s ease-in-out;
+}
+.fakeNavbar > div{
+    width: 60%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+.user{
+    font-size: 1.8vh;
+    font-family: 'Amaranth', sans-serif;
+    font-weight: 100;
+}
+.block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 5vh;
+}
+.block > p{
+    font-size: 1.3vh;
+    color: #556D0B;
+}
+.block > .fa-paper-plane, .block > .fa-right-to-bracket, .block > .fa-location-dot, .block > .fa-bars{
+    font-size: 2vh;
+    color: #556D0B;
+}
+
+.closeButton{
+    position: absolute;
+    top: 0;
+    right: 2%;
+    width: 4vw;
+    height: 4vw;
+    font-size: 2vw;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    transition: all 0.1s ease-in-out;
+}
+
+.closeButton:hover{
+    background-color: rgb(0, 170, 170);
+    color: white;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+.tableArea{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 85vw;
+    height: 100vh;
+    background-image: radial-gradient(rgb(195, 255, 245), rgb(77, 170, 112));
+    overflow-y: scroll;
+
+}
+
+.tableArea > h1{
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 4vw;
+    font-weight: 200;
+}
+.tableArea > h2{
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 2vw;
+    margin-top: 5%;
+}
+
+.tableArea > h2 > span{
+    font-family: 'Courgette', cursive;
+    font-size: 2vw;
+}
+
+table{
+    border-collapse: collapse;
+    width: 80vw;
+    background-color: rgba(255, 255, 255, 0.822);
+    border: 2px solid transparent;
+    border-radius: 10px;
+    margin: auto;
+}
+
+table > thead > tr > th{
+    text-align: center;
+    font-family: 'Berkshire Swash', cursive;
+    font-weight: 100;
+    font-size: 2vw;
+    padding: 1%;
+    border-bottom: 2px solid grey;
+}
+
+table > tbody > tr > td{
+    text-align: center;
+    font-family: 'Berkshire Swash', cursive;
+    font-weight: 100;
+    font-size: 2vw;
+    width: 20vw;
+    padding: 2%;
+    border-bottom: 1px solid grey;
+}
+
+
+table > tbody > tr > td > img{
+    width: 10vw;
+    height: 10vw;
+    border-radius: 2%;
+    box-shadow: 1px 1px 2px rgb(139, 139, 139);
+}   
+
+table > tbody > tr > td > button{
+    width: 3vw;
+    height: 3vw;
+    font-size: 2vw;
+    border-radius: 50%;
+    color: white;
+    margin: 1vw;
+    border: none;
+    background-color: rgb(255, 129, 25);
+    box-shadow: 1px 1px 2px rgb(128, 128, 128);
+    transition: all 0.3s ease-in-out;
+}
+
+table > tbody > tr > td > button:hover{
+    cursor: pointer;
+    transform: scale(1.105);
+    box-shadow: 1px 1px 2px rgb(0, 0, 0);
+    transition: all 0.3s ease-in-out;
+}
+
+.fa-trash-can{
+    color: red;
+    transition: all 0.3s ease-in-out;
+}
+
+.fa-trash-can:hover{
+    cursor: pointer;
+    transform: scale(1.225);
+    transition: all 0.3s ease-in-out;
+}
+
+.checkout{
+    margin: 5%;
+    padding: 1.5vw;
+    width: 15vw;
+    height: 5vw;
+    font-size: 1.8vw;
+    background-color: rgb(9, 202, 25);
+    color: white;
+    font-weight: 600;
+    font-variant: small-caps;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px black;
+}
+
+@media screen and (max-width: 768px){
+    .Navbar, .lowerNavbar{
+        display: none;
+    }
+    .fakeNavbar{
+        display: flex;
+    }
+    .backToTop{
+        top: 75%;
+        height: 6vh;
+        width: 6vh;
+    }
+    .fa-opencart{
+        font-size: 3vh;
+    }
+    .cartArea{
+        display: flex;
+    }
+}

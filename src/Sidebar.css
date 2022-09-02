@@ -1,0 +1,115 @@
+.Sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 76vh;
+    width: 20%;
+    margin-top: 1%;
+    border-right: 1px solid rgb(209, 209, 209);
+    background-color: white;
+    padding-top: 1%;
+    transition: all 0.5s ease-in-out;
+    position: sticky;
+    top: 15vw;
+    transition: all 0.5s ease-in-out;
+}
+.Sidebar > h3{
+    font-weight: 300;
+    font-size: 2vw;
+}
+.starAlign{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 5vh;
+    color: #F38A2E;
+    margin-top: 2%;
+}
+.starAlign > i{
+    cursor: pointer;
+    font-size: 2vw;
+}
+.starAlign > i:last-child{
+    color: #c0c0c0;
+}
+.Sidebar > p{
+    margin-top: 1%;
+    color: #5e595c;
+    font-size: 1.65vw;
+}
+.buttonsArea{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 5vh;
+}
+.buttonsArea > button{
+    padding: 1%;
+    width: 45%;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+}
+.buttonsArea > button:first-child{
+    background-color: #C9141A;
+}
+.buttonsArea > button:last-child{
+    background-color: #6A8A0A;
+}
+.Sidebar > ul{
+    list-style: none;
+    width: 100%;
+    margin-top: 1px;
+    height: 50vh;
+}
+.Sidebar > ul > li:first-child{
+    border-top: 1px solid rgb(194, 194, 194);
+}
+.Sidebar > ul > li{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 8%;
+    border-bottom: 1px solid rgb(194, 194, 194);
+    border-left: 2px solid #3c8b07;
+    color: grey;
+    font-size: 1.65vw;
+}
+.Sidebar > ul > li:last-child{
+    color: red;
+    flex-direction: row;
+    justify-content: center;
+}
+.fa-trash-can{
+    margin-left: 2vw;
+}
+.Sidebar > ul > li:hover{
+    background-color: rgb(238, 238, 238);
+    color: black;
+    cursor: pointer;
+}
+.Sidebar > ul > li:last-child:hover{
+    background-color: rgb(238, 238, 238);
+    color: red;
+    cursor: pointer;   
+}
+.active{
+    color: green !important;
+    background-color: rgb(197, 255, 197) !important;
+    font-weight: 900 !important;
+}
+@media screen and (max-width: 768px){
+    .Sidebar{
+        display: none;
+    }  
+}

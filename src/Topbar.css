@@ -1,0 +1,147 @@
+.Topbar{
+    width: 100%;
+    height: 6vh;
+    background-color: #556D0B;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.5s ease-in-out;
+}
+.Topbar > .left{
+    display: inline-flex;
+    width: 30%;
+    height: 3.5vw;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.Topbar > .left > h3{
+    color: white;
+    font-size: 1.5vw;
+    font-weight: 300;
+}
+.Topbar > .left > h4{
+    color: white;
+    font-size: 1.6vw;
+    font-weight: 400;
+}
+.Topbar > .left > a{
+    text-decoration: none;
+    color: #ff5e00;
+    font-size: 1.8vw;
+    font-weight: 500;
+    --animate-duration: 2.8s;
+    cursor: pointer;
+}
+.Topbar > .right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 65%;
+    height: 4vw;
+}
+.fa-location-dot, .fa-right-to-bracket, .fa-paper-plane{
+    color: white;
+    font-size: 1.5vw;
+    margin-right: 0.5vw;
+    cursor: pointer;
+}
+
+.Topbar > .right > span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.Topbar > .right > span:first-child{
+    width: 70%;
+}
+.Topbar > .right > span > p{
+    font-size: 1.5vw;
+}
+.Topbar > .right > span > p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.modalArea{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30vw;
+    height: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5%;
+    justify-content: center;
+    background-image: linear-gradient(to top left, rgb(255, 186, 58), rgb(255, 132, 153), rgb(70, 255, 255));
+}
+.modalArea > h1{
+    font-size: 5vw;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-variant: small-caps;
+}
+.modalArea > button{
+    margin-top: 5%;
+    width: 45%;
+    padding: 2%;
+    border: none;
+    background-color: rgb(13, 91, 155);
+    color: white;
+    border-radius: 5px;
+    font-size: 1.5vw;
+    cursor: pointer;
+    box-shadow: 0 2px 5px grey;
+}
+.labelHolder{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 80%;
+    height: 8vw;
+    margin-top: 5%;
+}
+.labelHolder > label{
+    font-family: 'Amaranth', sans-serif;
+    font-weight: 500;
+    font-size: 2vw;
+}
+.labelHolder > input{
+    width: 100%;
+    height: 4vw;
+    padding: 1%;
+    outline: 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5vw;
+}
+@media screen and (max-width: 768px){
+    .Topbar{
+        display: none;
+    }  
+    .modalArea{
+        width: 30vh;
+        height: 40vh;
+    }
+    .modalArea > h1{
+        font-size: 5vh;
+    }
+    .modalArea > button{
+        font-size: 1.5vh;
+    }
+    .labelHolder{
+        height: 8vh;
+    }
+    .labelHolder > label{
+        font-size: 2vh;
+    }
+    .labelHolder > input{
+        height: 4vh;
+        font-size: 1.5vh;
+    }
+}
